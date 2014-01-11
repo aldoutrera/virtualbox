@@ -10,7 +10,7 @@ php5-mysql php5-pgsql php5-gd curl php5-curl memcached php5-memcached libmcrypt4
 openssh-server git vim python2.7-dev
 
 # Download Bash Aliases
-wget -O ~/.bash_aliases https://gist.github.com/taylorotwell/8366284/raw/222738eb5d43f02450c354827047a6659d0a3aef/bash-aliases
+wget -O ~/.bash_aliases https://raw2.github.com/taylorotwell/virtualbox/master/aliases
 
 # Install MySQL
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password secret'
@@ -89,7 +89,7 @@ mkdir ~/Scripts
 mkdir ~/Scripts/PhpInfo
 
 # Download Serve Script
-wget -O ~/Scripts/serve.sh https://gist.github.com/taylorotwell/8366252/raw/d2a2af596f362b691e7008326c04aee1fd33d9b6/Ubuntu+Serve+Script
+wget -O ~/Scripts/serve.sh https://raw2.github.com/taylorotwell/virtualbox/master/serve.sh
 
 # Build PHP Info Site
 echo "<?php phpinfo();" > ~/Scripts/PhpInfo/index.php
