@@ -139,4 +139,10 @@ sudo mount /dev/cdrom /media/cdrom
 sudo sh /media/cdrom/VBoxLinuxAdditions.run
 sudo usermod -aG vboxsf www-data
 sudo usermod -aG vboxsf taylor
+
+# Final Clean
+cd ~
+rm -rf tmp/
+
+# Reboot
 sudo reboot
