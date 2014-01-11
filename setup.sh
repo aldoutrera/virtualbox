@@ -59,6 +59,10 @@ mkdir .ssh
 cd .ssh
 ssh-keygen -f id_rsa -t rsa -N ''
 
+# Configure & Start Beanstalkd Queue
+sudo sed -i "s/#START=yes/START=yes/" /etc/default/beanstalkd
+sudo /etc/init.d/beanstalkd start
+
 # Install Fabric & Hipchat Plugin
 sudo apt-get install -y python-pip
 sudo pip install fabric
