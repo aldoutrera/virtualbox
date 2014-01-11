@@ -18,7 +18,7 @@ A few of the action and scripts assume your shared folder will be `/media/sf_Cod
 - PHP 5.5
 - Composer
 - PHPUnit
-- Mailparse PHP Extension (For Snappy)
+- Mailparse PHP Extension (For Snappy Dev)
 - Memcached
 - Redis
 - MySQL (Password: secret)
