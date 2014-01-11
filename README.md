@@ -29,3 +29,13 @@ A few of the action and scripts assume your shared folder will be `/media/sf_Cod
 - SSH Key Generation
 - Taylor's Serve Script
 - Taylor's Bash Aliases
+
+## Port Forwarding
+
+**Note:** On Windows, you may use the same ports for both host and guest. This screenshots shows the Mac configuration where higher ports must be used on the host.
+
+![Port Forwarding Setup](http://d.pr/i/vHQH+)
+
+## Shared Folder
+
+![Shared Folder Setup](http://d.pr/i/x4oG+)
