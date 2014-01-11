@@ -10,6 +10,8 @@ These are my scripts for provisioning a new VirtualBox for PHP development. Many
 
 After the box has been provisioned, you only need to setup your shared folder(s) and port forwarding. Everything else is ready to go. You may connect to the MySQL and Postgres instances via any database management program on your host, such as Sequel Pro or Navicat.
 
+A few of the action and scripts assume your shared folder will be `/media/sf_Code`. You can modify the `setup.sh` and `serve.sh` scripts to change this.
+
 ## Includes
 
 - Apache
