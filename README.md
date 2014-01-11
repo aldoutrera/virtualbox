@@ -2,7 +2,7 @@
 
 These are my scripts for provisioning a new VirtualBox for PHP development. Many things are Taylor specific, such as the bash aliases and extensions for work related projects. However, feel free to fork and modify for your own usage.
 
-`wget https://raw2.github.com/taylorotwell/virtualbox/master/setup.sh`
+`wget -O setup.sh http://goo.gl/QwLXeD`
 
 ## Instructions
 
