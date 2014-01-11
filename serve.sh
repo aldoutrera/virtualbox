@@ -11,8 +11,8 @@ vhost="<VirtualHost *:80>
 	</Directory>
 </VirtualHost>"
 
-echo "$vhost" >> "/etc/apache2/sites-available/{$1}.conf"
+echo "$vhost" >> "/etc/apache2/sites-available/$1.conf"
 
-ln -s "/etc/apache2/sites-available/{$1}.conf" "/etc/apache2/sites-enabled/{$1}.conf"
+ln -s "/etc/apache2/sites-available/$1.conf" "/etc/apache2/sites-enabled/$1.conf"
 
 /etc/init.d/apache2 restart
