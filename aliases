@@ -1,0 +1,15 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+
+alias c='clear'
+
+alias h='cd ~'
+alias code='cd /media/sf_Code'
+alias share='cd /media/sf_Code'
+alias laravel='cd /media/sf_Code/Laravel'
+alias plain='cd /media/sf_Code/Laravel/plain'
+alias framework='cd /media/sf_Code/Laravel/app/vendor/laravel/framework'
+
+function serve() {
+	sudo sh /home/taylor/Scripts/serve.sh $1 $2
+}
