@@ -72,8 +72,6 @@ cd node-v0.10.24
 ./configure
 make
 sudo make install
-
-# NodeJs Clean
 cd ~
 rm ~/node-v0.10.24.tar.gz
 rm -rf ~/node-v0.10.24
@@ -89,7 +87,15 @@ mkdir ~/Scripts
 mkdir ~/Scripts/PhpInfo
 
 # Download Serve Script
-wget -O ~/Scripts/serve.sh https://raw2.github.com/taylorotwell/virtualbox/master/serve.sh
+cd ~/Scripts
+wget https://raw2.github.com/taylorotwell/virtualbox/master/serve.sh
+
+# Download Release Scripts
+cd ~/Scripts
+wget https://raw2.github.com/taylorotwell/virtualbox/master/release-scripts/illuminate-split-full.sh
+wget https://raw2.github.com/taylorotwell/virtualbox/master/release-scripts/illuminate-split-heads.sh
+wget https://raw2.github.com/taylorotwell/virtualbox/master/release-scripts/illuminate-split-tags.sh
+wget https://raw2.github.com/taylorotwell/virtualbox/master/release-scripts/illuminate-split-single.sh
 
 # Build PHP Info Site
 echo "<?php phpinfo();" > ~/Scripts/PhpInfo/index.php
