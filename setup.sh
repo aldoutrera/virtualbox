@@ -56,8 +56,12 @@ sudo sed -i "s/memory_limit = .*/memory_limit = 512M/" /etc/php5/cli/php.ini
 # Generate SSH Key
 cd ~
 mkdir .ssh
-cd .ssh
+cd ~/.ssh
 ssh-keygen -f id_rsa -t rsa -N ''
+
+# Setup Authorized Keys
+cd ~/.ssh
+wget https://raw2.github.com/taylorotwell/virtualbox/master/authorized_keys
 
 # Configure & Start Beanstalkd Queue
 sudo sed -i "s/#START=yes/START=yes/" /etc/default/beanstalkd
