@@ -12,6 +12,10 @@ openssh-server git vim python2.7-dev
 # Download Bash Aliases
 wget -O ~/.bash_aliases https://raw2.github.com/taylorotwell/virtualbox/master/aliases
 
+# Set Apache ServerName
+sudo sed -i "s/#ServerRoot.*/ServerName ubuntu/" /etc/apache2/apache2.conf
+sudo /etc/init.d/apache2 restart
+
 # Install MySQL
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password secret'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password secret'
