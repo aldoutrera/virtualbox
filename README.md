@@ -4,7 +4,7 @@ These are my scripts for provisioning a new VirtualBox for PHP development. Many
 
 ## Instructions
 
-Install Ubuntu 13.10 into new VirtualBox instance. Login to the box and select `Devices` -> `Insert Guest Additions CD image...` from the VirtualBox menu. Next, run the `setup` script to provision the box. After the box has been provisioned, you only need to setup your shared folder(s) and port forwarding. Everything else is ready to go. You may connect to the MySQL and Postgres instances via any database management program on your host, such as Sequel Pro or Navicat.
+Install Ubuntu 13.10 into new VirtualBox instance. Login to the box and select `Devices` -> `Insert Guest Additions CD image...` from the VirtualBox menu. Next, run the `setup.sh` script to provision the box. After the box has been provisioned, you only need to setup your shared folder(s) and port forwarding. Everything else is ready to go. You may connect to the MySQL and Postgres instances via any database management program on your host, such as Sequel Pro or Navicat.
 
 ## Includes
 
